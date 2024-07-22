@@ -1,0 +1,35 @@
+.animated-button {
+    /* Initial styles */
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Define transitions for background color, text color, and box shadow */
+  }
+  
+  .animated-button:hover {
+    /* Hover styles */
+    background-color: #3e8e41;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pulse animation */
+  .animated-button {
+    animation: pulse 2s infinite; /* Define the pulse animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
